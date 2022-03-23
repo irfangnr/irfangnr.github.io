@@ -1,0 +1,38 @@
+.navbar-light .navbar-brand {
+  background-color: black;
+  color: rgb(255 255 255 / 90%);
+  border-radius: 35px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.bg .img-responsive {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.profile-section {
+  padding-left: 20px;
+}
+
+.profile-section h4 {
+  margin: 0;
+}
+
+.profile-section p {
+  margin: 0;
+}
+
+.location {
+  padding-right: 10px;
+}
+
+.contact-me p {
+  margin-bottom: 5px;
+}
+
+.contact-me p a {
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+}
