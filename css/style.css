@@ -1,3 +1,6 @@
+body {
+  background-color: #f7f7f7;
+}
 .navbar-light .navbar-brand {
   background-color: black;
   color: rgb(255 255 255 / 90%);
@@ -7,9 +10,9 @@
 }
 
 .bg .img-responsive {
-  height: 400px;
-  object-fit: cover;
+  height: 500px;
   width: 100%;
+  object-fit: cover;
 }
 
 .profile-section {
@@ -38,7 +41,79 @@
 }
 
 .card {
-  margin-top: -180px;
+  margin-top: -190px;
+}
+/* img galery */
+.img-gallery {
+  position: relative;
+}
+
+.img-item {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #b6f6ff;
+}
+
+.img-gallery:hover .overlay {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* img zoom */
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.zoom-effect {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.kotak {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.kotak img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 700px;
+}
+
+.zoom-effect:hover .kotak img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 @media only screen and (max-width: 768px) {
